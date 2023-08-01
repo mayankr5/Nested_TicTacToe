@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bkg"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71000004"
+        app:srcCompat="@drawable/attire" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="161dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/button"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:textFontWeight="100"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="387dp"
+        android:layout_height="387dp"
+        android:background="@drawable/board"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/img0"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout0"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img00"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="0"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img01"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="1"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img02"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="2"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img03"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="3"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img04"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="4"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img05"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="5"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img06"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="6"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img07"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="7"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img08"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignBottom="@id/img0"
+                android:onClick="onClick"
+                android:tag="8"
+                app:layout_column="2"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout1"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img10"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignRight="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:onClick="onClick"
+                android:tag="10"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img11"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignRight="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:onClick="onClick"
+                android:tag="11"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img12"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignRight="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:onClick="onClick"
+                android:tag="12"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img13"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignRight="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:onClick="onClick"
+                android:tag="13"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img14"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignRight="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:onClick="onClick"
+                android:tag="14"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img15"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignRight="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:onClick="onClick"
+                android:tag="15"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img16"
+                android:layout_width="41dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="16"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img17"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignRight="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:onClick="onClick"
+                android:tag="17"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img18"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignRight="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:onClick="onClick"
+                android:tag="18"
+                app:layout_column="2"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img20"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignRight="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:onClick="onClick"
+                android:tag="20"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img21"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignRight="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:onClick="onClick"
+                android:tag="21"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img22"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignRight="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:onClick="onClick"
+                android:tag="22"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img23"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignRight="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:onClick="onClick"
+                android:tag="23"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img24"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="24"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img25"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignRight="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:onClick="onClick"
+                android:tag="25"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img26"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignRight="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:onClick="onClick"
+                android:tag="26"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img27"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignRight="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:onClick="onClick"
+                android:tag="27"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img28"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignRight="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:onClick="onClick"
+                android:tag="28"
+                app:layout_column="2"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout3"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img30"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="30"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img31"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="31"
+                app:layout_column="1"
+                app:layout_row="0" />/>
+
+            <ImageView
+                android:id="@+id/img32"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="32"
+                app:layout_column="2"
+                app:layout_row="0" />/>
+
+            <ImageView
+                android:id="@+id/img33"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="33"
+                app:layout_column="0"
+                app:layout_row="1" />/>
+
+            <ImageView
+                android:id="@+id/img34"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="34"
+                app:layout_column="1"
+                app:layout_row="1" />/>
+
+            <ImageView
+                android:id="@+id/img35"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="35"
+                app:layout_column="2"
+                app:layout_row="1" />/>
+
+            <ImageView
+                android:id="@+id/img36"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="36"
+                app:layout_column="0"
+                app:layout_row="2" />/>
+
+            <ImageView
+                android:id="@+id/img37"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="37"
+                app:layout_column="1"
+                app:layout_row="2" />/>
+
+            <ImageView
+                android:id="@+id/img38"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignLeft="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:onClick="onClick"
+                android:tag="38"
+                app:layout_column="2"
+                app:layout_row="2" />/>
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout4"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img40"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="40"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img41"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="41"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img42"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="42"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img43"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="43"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img44"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="44"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img45"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="45"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img46"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="46"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img47"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="47"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img48"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="48"
+                app:layout_column="2"
+                app:layout_row="2" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="5"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout5"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img50"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="50"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img51"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="51"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img52"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="52"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img53"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="53"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img54"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="54"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img55"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="55"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img56"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="56"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img57"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="57"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img58"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="58"
+                app:layout_column="2"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout6"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img60"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="60"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img61"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="61"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img62"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="62"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img63"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="63"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img64"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="64"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img65"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="65"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img66"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="66"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img67"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="67"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img68"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="68"
+                app:layout_column="2"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="7"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout7"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img70"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="70"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img71"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="71"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img72"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="72"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img73"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="73"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img74"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="74"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img75"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="75"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img76"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="76"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img77"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="77"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img78"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="78"
+                app:layout_column="2"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout8"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            app:columnCount="3"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/img80"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="80"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img81"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="81"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img82"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="82"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/img83"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="83"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img84"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="84"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img85"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="85"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/img86"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="86"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img87"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="87"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/img88"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:onClick="onClick"
+                android:tag="88"
+                app:layout_column="2"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
